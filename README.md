@@ -12,10 +12,12 @@ Clone do fruit ninja desenvolvido em flutter
 
 ### Pre requisitos
 
+```bash
 [Flutter 1.22.4] • channel stable
 [Framework] • revision 1aafb3a8b9 
 [Engine] • revision 2c956a31c0
 [Tools] • Dart 2.10.4
+```
 
 ### Abrir no emulador
 
