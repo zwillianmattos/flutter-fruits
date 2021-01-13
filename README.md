@@ -6,8 +6,16 @@
 Nome: Willian de Mattos Silva
 Clone do fruit ninja desenvolvido em flutter
 
+### Telas
 
-# Tutorial utilizado para desenvolver o jogo :
+[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
+
+[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
+
+[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
+
+
+### Tutorial utilizado para desenvolver o jogo :
    - https://www.youtube.com/watch?v=eAaikwyDSoU&ab_channel=JapaAlekhinLlemos
 
 - [Introduction to game development]  https://jap.alekhin.io/create-mobile-game-flutter-flame-beginner-tutorial
