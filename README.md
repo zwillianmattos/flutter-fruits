@@ -2,17 +2,21 @@
 
 [![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
 
-# Informações básicas
-Nome: Willian de Mattos Silva
-Clone do fruit ninja desenvolvido em flutter
 
 ### Telas
 
-[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
+[![N|Solid](https://gitlab.com/willian1337/flutter-fruits/-/raw/17d27666216d846ee2dcc005fe70a14974bcc585/Screenshot_1610573984.png?inline=false)](https://gitlab.com/willian1337/flutter-fruits)
 
-[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
 
-[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
+[![N|Solid](https://gitlab.com/willian1337/flutter-fruits/-/raw/17d27666216d846ee2dcc005fe70a14974bcc585/Screenshot_1610574056.png?inline=false)](https://gitlab.com/willian1337/flutter-fruits)
+
+
+[![N|Solid](https://gitlab.com/willian1337/flutter-fruits/-/raw/17d27666216d846ee2dcc005fe70a14974bcc585/Screenshot_1610574046.png?inline=false)](https://gitlab.com/willian1337/flutter-fruits)
+
+
+### Informações básicas
+Nome: Willian de Mattos Silva
+Clone do fruit ninja desenvolvido em flutter
 
 
 ### Tutorial utilizado para desenvolver o jogo :
