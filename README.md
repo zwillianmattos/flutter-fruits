@@ -1,6 +1,6 @@
 # Fruit Ninja
 
-[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://assets.gitlab-static.net/uploads/-/system/project/avatar/23284907/logo.jpg)](https://gitlab.com/willian1337/flutter-fruits)
 
 # Informações básicas
 Nome: Willian de Mattos Silva
