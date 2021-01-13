@@ -10,6 +10,13 @@ Clone do fruit ninja desenvolvido em flutter
 # Tutorial utilizado para desenvolver o jogo :
    - https://www.youtube.com/watch?v=eAaikwyDSoU&ab_channel=JapaAlekhinLlemos
 
+- [Introduction to game development]  https://jap.alekhin.io/create-mobile-game-flutter-flame-beginner-tutorial
+- [Set up a playable game] https://jap.alekhin.io/2d-casual-mobile-game-tutorial-flame-flutter-part-1
+- [Graphics and animation]  https://jap.alekhin.io/game-graphics-and-animation-tutorial-flame-flutter-part-2
+- [Views and dialog boxes]  https://jap.alekhin.io/views-dialog-boxes-tutorial-flame-flutter-part-3
+- [Scoring, storage, and sound (you are here)] https://jap.alekhin.io/scoring-storage-sound-tutorial-flame-flutter-part-4
+- [Finishing up and packaging]  https://jap.alekhin.io/game-finishing-packaging-tutorial-flame-flutter-part-5
+
 ### Pre requisitos
 
 ```bash
