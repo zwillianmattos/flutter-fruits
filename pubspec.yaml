@@ -44,43 +44,23 @@ flutter:
     - assets/audio/sfx/swipe.wav
     - assets/audio/bgm/home.mp3
     - assets/audio/bgm/playing.mp3
-    - assets/audio/sfx/haha1.ogg
     - assets/audio/sfx/haha2.ogg
-    - assets/audio/sfx/haha3.ogg
-    - assets/audio/sfx/haha4.ogg
-    - assets/audio/sfx/haha5.ogg
-    - assets/audio/sfx/ouch1.ogg
-    - assets/audio/sfx/ouch2.ogg
-    - assets/audio/sfx/ouch3.ogg
-    - assets/audio/sfx/ouch4.ogg
-    - assets/audio/sfx/ouch5.ogg
-    - assets/audio/sfx/ouch6.ogg
-    - assets/audio/sfx/ouch7.ogg
-    - assets/audio/sfx/ouch8.ogg
-    - assets/audio/sfx/ouch9.ogg
-    - assets/audio/sfx/ouch10.ogg
-    - assets/audio/sfx/ouch11.ogg
     - assets/images/bg/backyard.png
     - assets/images/bg/lose-splash.png
     - assets/images/branding/title.png
     - assets/images/branding/logo.png
-    - assets/images/flies/bomb.png
-    - assets/images/flies/banana.png
-    - assets/images/flies/banana-cut-1.png
-    - assets/images/flies/banana-cut-2.png
-    - assets/images/flies/pineapple.png
-    - assets/images/flies/pineapple-cut-1.png
-    - assets/images/flies/pineapple-cut-2.png
-    - assets/images/flies/house-fly-1.png
-    - assets/images/flies/house-fly-2.png
-    - assets/images/flies/house-fly-dead.png
-    - assets/images/flies/house-fly-dead_2.png
-    - assets/images/flies/melon_splash.png
-    - assets/images/flies/banana-splash.png
-    - assets/images/ui/callout.png
-    - assets/images/ui/dialog-credits.png
-    - assets/images/ui/dialog-help.png
-    - assets/images/ui/icon-credits.png
+    - assets/images/fruits/bomb.png
+    - assets/images/fruits/banana.png
+    - assets/images/fruits/banana-cut-1.png
+    - assets/images/fruits/banana-cut-2.png
+    - assets/images/fruits/pineapple.png
+    - assets/images/fruits/pineapple-cut-1.png
+    - assets/images/fruits/pineapple-cut-2.png
+    - assets/images/fruits/melancia.png
+    - assets/images/fruits/melancia-cut-2.png
+    - assets/images/fruits/melancia-cut-1.png
+    - assets/images/fruits/melon_splash.png
+    - assets/images/fruits/banana-splash.png
     - assets/images/ui/icon-help.png
     - assets/images/ui/icon-music-disabled.png
     - assets/images/ui/icon-music-enabled.png

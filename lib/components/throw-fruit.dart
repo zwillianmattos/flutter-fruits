@@ -15,7 +15,7 @@ class ThrowFruit {
   Sprite deadSprite2;
   Sprite splash;
   double flyingSpriteIndex = 0;
-  Rect flyRect;
+  Rect fruitRect;
   Rect deadZone;
   bool isDead = false;
   bool isOffScreen = false;
@@ -42,16 +42,16 @@ class ThrowFruit {
     // print(game.screenSize.height);
     if (isDead) {
       if( deadZone == null ) {
-        deadZone = flyRect;
+        deadZone = fruitRect;
       }
       if( !isBomb ) {
         splash.renderPosition(c, Position(deadZone.left, deadZone.top));
-        deadSprite.renderPosition(c, Position(flyRect.center.dx, flyRect.center.dy).rotateDeg(5), size: Position( flyRect.width*1.5, flyRect.height*1.5));
-        deadSprite2.renderPosition(c, Position(flyRect.center.dx, flyRect.center.dy).rotateDeg(-5), size: Position( flyRect.width*1.5, flyRect.height*1.5));
+        deadSprite.renderPosition(c, Position(fruitRect.center.dx, fruitRect.center.dy).rotateDeg(5), size: Position( fruitRect.width*1.5, fruitRect.height*1.5));
+        deadSprite2.renderPosition(c, Position(fruitRect.center.dx, fruitRect.center.dy).rotateDeg(-5), size: Position( fruitRect.width*1.5, fruitRect.height*1.5));
       }
 
     } else {
-      flyingSprite[flyingSpriteIndex.toInt()].renderRect(c, flyRect.inflate(flyRect.width / 4));
+      flyingSprite[flyingSpriteIndex.toInt()].renderRect(c, fruitRect.inflate(fruitRect.width / 4));
     }
   }
 
@@ -60,8 +60,8 @@ class ThrowFruit {
       // make the fly fall
 
       rotate += 2* t;
-      flyRect = flyRect.translate(0, game.tileSize * 12 * t);
-      if (flyRect.top > game.screenSize.height) {
+      fruitRect = fruitRect.translate(0, game.tileSize * 12 * t);
+      if (fruitRect.top > game.screenSize.height) {
         isOffScreen = true;
       }
     } else {
@@ -73,14 +73,14 @@ class ThrowFruit {
 
       // move the fly
       double stepDistance = speed * t;
-      Offset toTarget = targetLocation - Offset(flyRect.left, flyRect.top);
+      Offset toTarget = targetLocation - Offset(fruitRect.left, fruitRect.top);
       if (stepDistance < toTarget.distance) {
         Offset stepToTarget = Offset.fromDirection(toTarget.direction, stepDistance);
-        flyRect = flyRect.shift(stepToTarget);
+        fruitRect = fruitRect.shift(stepToTarget);
 
 
       } else {
-        flyRect = flyRect.shift(toTarget);
+        fruitRect = fruitRect.shift(toTarget);
 
         if( destroy  ) {
 

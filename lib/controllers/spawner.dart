@@ -6,35 +6,35 @@ class FlySpawner {
   final int maxSpawnInterval = 3000;
   final int minSpawnInterval = 250;
   final int intervalChange = 3;
-  final int maxFliesOnScreen = 7;
+  final int maxFruitsOnScreen = 7;
   int currentInterval;
   int nextSpawn;
 
   FlySpawner(this.game) {
     start();
-    game.spawnFly();
+    game.spawnFruit();
   }
 
   void start() {
-    killAll();
+    cutAll();
     currentInterval = maxSpawnInterval;
     nextSpawn = DateTime.now().millisecondsSinceEpoch + currentInterval;
   }
 
-  void killAll() {
-    game.flies.forEach((ThrowFruit fly) => fly.isDead = true);
+  void cutAll() {
+    game.fruits.forEach((ThrowFruit fruit) => fruit.isDead = true);
   }
 
   void update(double t) {
     int nowTimestamp = DateTime.now().millisecondsSinceEpoch;
 
-    int livingFlies = 0;
-    game.flies.forEach((ThrowFruit fly) {
-      if (!fly.isDead) livingFlies += 1;
+    int fruitsSpawned = 0;
+    game.fruits.forEach((ThrowFruit fruit) {
+      if (!fruit.isDead) fruitsSpawned += 1;
     });
 
-    if (nowTimestamp >= nextSpawn && livingFlies < maxFliesOnScreen) {
-      game.spawnFly();
+    if (nowTimestamp >= nextSpawn && fruitsSpawned < maxFruitsOnScreen) {
+      game.spawnFruit();
       if (currentInterval > minSpawnInterval) {
         currentInterval -= intervalChange;
         currentInterval -= (currentInterval * .02).toInt();

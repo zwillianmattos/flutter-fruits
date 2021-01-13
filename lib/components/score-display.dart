@@ -34,7 +34,7 @@ class ScoreDisplay {
         fontSize: game.tileSize * 2,
         shadows: <Shadow>[
           Shadow(
-            blurRadius: game.tileSize * .25,
+            blurRadius: game.tileSize * .6,
             color: Color(0xff000000),
             offset: Offset(3, 3),
           ),

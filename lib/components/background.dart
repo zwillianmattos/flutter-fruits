@@ -2,12 +2,12 @@ import 'dart:ui';
 import 'package:flame/sprite.dart';
 import 'package:flutter_fruits/fruit-game.dart';
 
-class Backyard {
+class BackgroundGame {
   final FruitGame game;
   Sprite bgSprite;
   Rect bgRect;
 
-  Backyard(this.game) {
+  BackgroundGame(this.game) {
     bgSprite = Sprite('bg/backyard.png');
     resize();
   }

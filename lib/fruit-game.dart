@@ -5,7 +5,7 @@ import 'package:flame/game.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter_fruits/bgm.dart';
 import 'package:flutter_fruits/components/Banana.dart';
-import 'package:flutter_fruits/components/backyard.dart';
+import 'package:flutter_fruits/components/background.dart';
 import 'package:flutter_fruits/components/Bomb.dart';
 import 'package:flutter_fruits/components/throw-fruit.dart';
 import 'package:flutter_fruits/components/highscore-display.dart';
@@ -27,8 +27,8 @@ class FruitGame extends Game {
   double tileSize;
   Random rnd;
 
-  Backyard background;
-  List<ThrowFruit> flies;
+  BackgroundGame background;
+  List<ThrowFruit> fruits;
   StartButton startButton;
   MusicButton musicButton;
   SoundButton soundButton;
@@ -49,11 +49,11 @@ class FruitGame extends Game {
 
   Future<void> initialize() async {
     rnd = Random();
-    flies = List<ThrowFruit>();
+    fruits = List<ThrowFruit>();
     score = 0;
     resize(Size.zero);
 
-    background = Backyard(this);
+    background = BackgroundGame(this);
     startButton = StartButton(this);
     musicButton = MusicButton(this);
     soundButton = SoundButton(this);
@@ -67,23 +67,22 @@ class FruitGame extends Game {
     BGM.play(BGMType.home);
   }
 
-  void spawnFly() {
+  void spawnFruit() {
     double x = rnd.nextDouble() * (screenSize.width - (tileSize * 2.025));
-    // double y = (rnd.nextDouble() * (screenSize.height - (tileSize * 2.025))) + (tileSize * 1.5);
     double y = screenSize.height - (tileSize * 2.025);
-    //rnd.nextInt(5)
+
     switch (rnd.nextInt(4)) {
       case 0:
-        flies.add(Watermelon(this, x, y));
+        fruits.add(Watermelon(this, x, y));
         break;
       case 1:
-        flies.add(Bomb(this, x, y));
+        fruits.add(Bomb(this, x, y));
         break;
       case 2:
-        flies.add(Banana(this, x, y));
+        fruits.add(Banana(this, x, y));
         break;
       case 3:
-        flies.add(Pineaple(this, x, y));
+        fruits.add(Pineaple(this, x, y));
         break;
     }
   }
@@ -94,7 +93,7 @@ class FruitGame extends Game {
     highscoreDisplay.render(canvas);
     if (activeView == View.playing || activeView == View.lost) scoreDisplay.render(canvas);
 
-    flies.forEach((ThrowFruit fly) => fly.render(canvas));
+    fruits.forEach((ThrowFruit fly) => fly.render(canvas));
 
     if (activeView == View.home) homeView.render(canvas);
     if (activeView == View.lost) lostView.render(canvas);
@@ -107,8 +106,8 @@ class FruitGame extends Game {
 
   void update(double t) {
     spawner.update(t);
-    flies.forEach((ThrowFruit fly) => fly.update(t));
-    flies.removeWhere((ThrowFruit fly) => fly.isOffScreen);
+    fruits.forEach((ThrowFruit fly) => fly.update(t));
+    fruits.removeWhere((ThrowFruit fly) => fly.isOffScreen);
     if (activeView == View.playing) scoreDisplay.update(t);
   }
 
@@ -120,7 +119,7 @@ class FruitGame extends Game {
 
     highscoreDisplay?.resize();
     scoreDisplay?.resize();
-    flies.forEach((ThrowFruit fly) => fly?.resize());
+    fruits.forEach((ThrowFruit fly) => fly?.resize());
 
     homeView?.resize();
     lostView?.resize();
@@ -162,14 +161,14 @@ class FruitGame extends Game {
       }
     }
 
-    // flies
+    // fruits
     if (!isHandled) {
-      bool didHitAFly = false;
-      flies.forEach((ThrowFruit fly) {
-        if (fly.flyRect.contains(d.globalPosition)) {
-          fly.onTapDown();
+      bool didHitAFruit = false;
+      fruits.forEach((ThrowFruit fruit) {
+        if (fruit.fruitRect.contains(d.globalPosition)) {
+          fruit.onTapDown();
           isHandled = true;
-          didHitAFly = true;
+          didHitAFruit = true;
         }
       });
 
